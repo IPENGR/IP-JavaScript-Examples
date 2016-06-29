@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var d=[3,3,2,1,7];
+    document.write(d.splice(2,2));//the first arguement moves to the cursor to specific position and second arguement tells how many elements to be deleted from that position
+    document.write('<br>'+ d.valueOf());//the array is altered
+    document.write('<br>'+ d.length);//3
+    var g=new Array(3,9,'v',8,'o');
+    g.splice(2,1,8);//the third arguement tells that it will be added to array in the deleted position
+    document.write('<br>'+g.toString());
+    var h=Array(6,9,66,22);
+    var newh= h.splice(2,1,'hellow','world');
+    document.write('<br>'+h.toString());//6,9,hellow,world,22
+
+</script>
+</body>
+</html>

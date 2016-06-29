@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var h=[3,9,1,4];
+    document.write(h.reverse());//4,1,9,3
+    document.write('<br>'+ h.sort());
+    var u=[1,10,19,8,6];
+    document.write('<br>'+ u.sort());//it shows wrong result because it is doing string sorrting
+    //solution for that is:
+    var u=[1,10,19,8,6];
+    var y= u.sort(function(a,b)
+    {return a-b;});
+    document.write('<br>'+ y.valueOf());
+</script>
+
+</body>
+</html>

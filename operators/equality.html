@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    if(42=='42')
+    {
+        console.log("true");//in javascript string is implicitly parsed to numeric
+    }
+    else
+    console.log("false");
+    var obj1={valueOf:function(){return 12;}};
+    if(12==obj1)
+    console.log(true);//true because js looks for valueOf function and executes it
+    else
+    console.log(false);
+    var obj1={toString:function(){return 43;}};
+    if(43==obj1)
+    console.log(true);//in case of absence of valueOf function it will looks for toString and executes it
+    else
+    console.log(false);
+    var obj1={name:"venu"};
+    var obj2={name:"venu"};
+    if(obj1==obj2)
+    console.log(true);
+    else
+    console.log(false);//false because even though the two objects content is same those will occuopy different memory space
+    if(55==="55")
+    console.log(true);
+    else
+    console.log(false);//false because type is different one is number and one is string
+    if(null==0)
+    {
+        console.log(true);
+
+    }
+    else
+    console.log(false);//we should not compare null to anything except undefined in javascript
+</script>
+
+</body>
+</html>

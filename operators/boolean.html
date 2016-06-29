@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var v=!0;
+    console.log(v);
+    var v=!!0;
+    console.log(v);//0 means false, first ! will make it as true and second! makes it as false
+    var obj1={car:"audi"};
+    var val=obj1&&99;
+    console.log(val);
+    var obj1={gender:"male"};
+    var obj2={gender:"female"};
+    var r=obj1&&obj2;
+    console.log(r);
+    var h=5;
+    var d=false&&++h;
+    console.log(d);
+    console.log(h);//h vallue never change because we have false as first operand then it will ignore the second operand
+    var w=9;
+    var f=false||w;
+    console.log(f);
+</script>
+</body>
+</html>

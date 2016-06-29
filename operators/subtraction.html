@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x="300"-"100";//implicitly converts string to number
+    console.log(x);
+    console.log(typeof x);//number
+    var y;
+    y = {
+        valueOf: function () {
+            return 10;
+        }
+    };
+    var q=39-y;
+    console.log(q);//29
+    var c=60-null;
+    console.log(c);//60 because null will be teated as 0
+</script>
+
+</body>
+</html>
